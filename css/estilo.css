@@ -1,0 +1,32 @@
+/* regra css */
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*  */
+    scrollbar-width: thin;/*  */
+    scrollbar-color: red;/*  */
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+html[data-theme='dark'] .logo {
+    filter: invert(1);
+}
+
+#header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    
+} 
+
+.logo {
+    width: 56px;  /* largura */
+    height: 56px; /* altura */
+}
