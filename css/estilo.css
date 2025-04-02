@@ -11,6 +11,15 @@
 body {
     background-color: rgb(37, 37, 37);
 }
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul{
+
+
+}
 
 html[data-theme='dark'] .logo {
     filter: invert(1);
@@ -29,4 +38,29 @@ html[data-theme='dark'] .logo {
 .logo {
     width: 56px;  /* largura */
     height: 56px; /* altura */
+}
+
+.header-toggle{
+    display: flex;
+    justify-content: flex-end;
+}
+#toggleTheme{
+    color: whitesmoke; /* cor texto */
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+
+}
+
+.menu-link {
+    display: flex;
+    text-transform: uppercase;
+    
+
 }
