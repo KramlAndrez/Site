@@ -33,6 +33,7 @@ EB Garamond:
 
 body {
     background-color: rgb(37, 37, 37);
+    color: whitesmoke;
 }
 a{
     color: whitesmoke;
@@ -123,6 +124,9 @@ html[data-theme='dark'] .logo {
 .menu-texto {
     color: #525050;
     font-weight: 400;
+}
+.icone-link {
+    font-size: 25px;
 }
 
 
