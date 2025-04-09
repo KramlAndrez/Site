@@ -1,6 +1,18 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
 
+/* Variaveis de cor */
+/* Definir cores tema dark */
+:root,
+:root[data-theme="dark"] {
+    
+    --fundo-header: red;
+
+}
+/* Definir cores tema Light */
+:root[data-theme="light"] {
+    --fundo-header: green;
+}
 /*
 root Font padrão
 EB Garamond:
@@ -18,7 +30,7 @@ EB Garamond:
   Libre Caslon Text:
      font-family: "Libre Caslon Text", serif;
   font-weight: 700;
-  font-style: normal;
+  font-style: normal; */
 
 /* regra css */
 
@@ -133,6 +145,7 @@ strong{
     justify-content: space-between;
     border-top: 1px solid #989898;
     z-index: 1;
+    background-color: rgb(37, 37, 37);
 }
 
 .menu-link.active .icone-link,
@@ -197,9 +210,39 @@ strong{
     transition: all ease-in-out .4s;
 }
 
+.btn:hover span,
+.btn:hover i {
+    color: red;
+
+}
+.icon-social {
+    font-size: 22px;
+    color: #989898;
+}
+.icon-social:hover {
+    color:#ffff;
+
+
+}
+/* Estrutura */
+
+/* ATUALIZACOES FUTURAS */
+#home {
+    padding: 40px 16px;
+}
+
+
 /* CSS Responsivo */
 /* telas apartir de 768 */
 @media(min-width: 768px) {
+    #header {
+        background-color: var(--fundo-header);
+        position: fixed;
+        border-bottom: 1px solid #989898;
+        padding: 16px 96px;
+        
+        
+    }
     .header-nav{
         display: flex;
     }
@@ -210,6 +253,23 @@ strong{
     .nav-mobile {
         display: none;
     }
+    #home { /* Atulização futura */
+        padding: 128px 96px 64px;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
+/* 1200px */
+@media (min-width: 1200px) {
+    #home {
+        padding: 160px 96px 32px;
+    }
+
+}
+   
+    
     
 
