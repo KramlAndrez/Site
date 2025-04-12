@@ -13,6 +13,8 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 <body>
@@ -47,7 +49,7 @@
         </nav> <!-- Fim Menu desktop -->
 
         <!-- Logo -->
-        <div>
+        <div data-aos="zoom-in">
             <a href="#home" class="menu-item">
                 <img src="img/logo.png" alt="" class="logo">
             </a>
@@ -96,10 +98,11 @@
     </nav>
     <main id="home">
 
-        <div class="main-content">
+        <div class="main-content" data-aos="zoom-in" data-aos-delay="600">
 
             <h1>
-                <strong>
+                <strong  data-aos="zoom-in" data-aos-delay="600">
+                    
                     Soluções digitais &
                 </strong>
                 Desenvolvimento Front-End
@@ -214,7 +217,7 @@
 
 
             <!-- Projeto 2 -->
-            <article class="projeto-card">
+            <article class="projeto-card card-reverse">
                 <img src="img/Allianz.PNG" alt="" class="card-img">
 
                 <div class="card-body">
@@ -248,12 +251,58 @@
                 </div>
 
             </article>
+             <!-- Projeto 3 -->
+             <article class="projeto-card">
+                <img src="img/basquete3.PNG" alt="" class="card-img">
+
+                <div class="card-body">
+
+                    <h3 class="card-title">Esportes Alternativos</h3>
+                    <p class="card-bescription">
+                        Ginásio Basquete
+                    </p>
+
+                    <ul class="card-list">
+
+                        <li class="card-item">
+                            <i class="icon-list bi bi-chevron-double-right"></i>
+                            Sentimentos
+
+                        </li>
+
+                        <li class="card-item">
+                            <i class="icon-list bi-chevron-double-right"></i>
+                            Adrenalina
+
+                        </li>
+
+                        <li class="card-item">
+                            <i class="icon-list bi-chevron-double-right"></i>
+                            Foco
+
+                        </li>
+
+                    </ul>
+                </div>
+
+            </article>
 
         </div>
 
     </section>
 
+    <!-- AOS JS -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="js/script.js"> </script>
+
+    <script>
+        AOS.init({
+            duration:600,
+        });
+        
+    </script>
 
 
 </body>

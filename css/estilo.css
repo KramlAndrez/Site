@@ -303,6 +303,13 @@ card-description {
     font-size: 20px;
     margin-bottom: 5px;
 }
+.card-body {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
 
 /* ATUALIZACOES FUTURAS */
 #home,
@@ -347,6 +354,22 @@ card-description {
     .projeto-card {
         flex-direction: row;
     }
+    .projeto-card.card-reverse {
+        flex-direction: row-reverse;
+        justify-content: end;
+
+    }
+    .card-reverse.card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+                  
+
+        
     .card-img {
         width: 55%;
     }
@@ -379,4 +402,15 @@ card-description {
     .projetos {
         padding: 160px 240px 64px;
     }
+}
+/* 0 até 992 */
+
+@media (max:992px) {
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
+    }
+
 }
