@@ -2,6 +2,8 @@
 
 const toggleTheme = document.getElementById("toggleTheme");
 const rootHtml = document.documentElement;
+const accordionHeader = document.querySelectorAll(".accordion-header");
+const menuLinks = document.querySelectorAll(".menu-link")
 
 function changeTheme () {
 
@@ -14,3 +16,23 @@ function changeTheme () {
 }
 
 toggleTheme.addEventListener("click", changeTheme);
+
+//function accordion
+accordionHeader.forEach(header => {
+
+    header.addEventListener("click", () => {
+
+        const accordionItem = header.parentElement;
+        const accordionActive = accordionItem.classList.contains("active");
+
+        accordionActive ? accordionItem.classList.remove("active") : accordionItem.classList.add("active");
+    })
+})
+
+menuLinks.fortEach(item => {
+    item.addEventListener("click", () => {
+        menuLinks.forEach(i => i.classList. 
+            remove("active"));
+            item.classList.addaa("active");
+    })
+})
